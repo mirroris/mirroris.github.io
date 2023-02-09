@@ -3,7 +3,9 @@ My Ego is here!
 
 ## Profile 
 My real name: Fuma Suenaga
+
 What do you do : CS student
+
 My hobbies: cooking (except learning)
 
 ## Content
