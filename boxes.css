@@ -9,6 +9,7 @@
     font-weight:bold;
     border-color:darkorange;
     border-radius:10%;
+    border:10px,10px,10px,10px;
     text-align:center;
     cursor:auto;
 }
@@ -24,6 +25,23 @@
     font-weight:bold;
     border-color:blue;
     border-radius:10%;
+    border:10px,10px,10px,10px;
+    text-align:center;
+    cursor:auto;
+}
+
+.philButton {
+    height:200px;
+    width:200px;
+    max-width:200px;
+    max-height:200px;
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size:large;
+    font-weight:bold;
+    border-color:palevioletred;
+    border-radius:10%;
+    border:10px,10px,10px,10px;
     text-align:center;
     cursor:auto;
 }
