@@ -1,4 +1,4 @@
-.subjectButton {
+.mathButton {
     height:200px;
     width:200px;
     max-width:200px;
@@ -7,11 +7,23 @@
     margin-bottom:5%;
     font-size:large;
     font-weight:bold;
-    background-color:darkorange;
+    border-color:darkorange;
     border-radius:10%;
     text-align:center;
+    cursor:auto;
 }
 
-.AlphabetPallet {
-    
+.phisButton {
+    height:200px;
+    width:200px;
+    max-width:200px;
+    max-height:200px;
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size:large;
+    font-weight:bold;
+    border-color:blue;
+    border-radius:10%;
+    text-align:center;
+    cursor:auto;
 }
