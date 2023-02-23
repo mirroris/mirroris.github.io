@@ -9,8 +9,8 @@
     font-weight:bold;
     border-color:darkorange;
     border-radius:10%;
-    border:10px,10px,10px,10px;
-    text-align:center;
+    border-width:medium;
+    text-align:pointer;
     cursor:auto;
 }
 
@@ -25,9 +25,9 @@
     font-weight:bold;
     border-color:blue;
     border-radius:10%;
-    border:10px,10px,10px,10px;
+    border-width:medium;
     text-align:center;
-    cursor:auto;
+    cursor:pointer ;
 }
 
 .philButton {
@@ -41,7 +41,7 @@
     font-weight:bold;
     border-color:gray;
     border-radius:10%;
-    border:10px,10px,10px,10px;
+    border-width:medium;
     text-align:center;
-    cursor:auto;
+    cursor:pointer;
 }
