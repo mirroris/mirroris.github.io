@@ -10,8 +10,8 @@
     border-color:darkorange;
     border-radius:10%;
     border-width:medium;
-    text-align:pointer;
-    cursor:auto;
+    text-align:center;
+    cursor:pointer;
 }
 
 .phisButton {
