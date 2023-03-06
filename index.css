@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     background-color:#EFF0F1;
     height:100%;
+    opacity:60%;
 }
 
 ul {
@@ -29,7 +30,7 @@ ul {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    background-color: #1A001A;
+    background-color: gray;
 }
 
 .headerMenu {
@@ -56,7 +57,7 @@ ul {
 }
 
 .headerMenu a.active {
-    background-color: #FF0000;
+    background-color: #ff1b98;
     color: white;
 }
         
