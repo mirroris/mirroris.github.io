@@ -7,6 +7,20 @@
         </title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="boxes.css">
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-size: 30px;
+                font-family: Arial, sans-serif;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -27,6 +41,85 @@
         <div class="Mirroris">
             Mirroris
         </div>
+        
+    <canvas id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        var text = "Gravity";
+        var particles = [];
+
+        // create particle class
+        function Particle(x, y, dx, dy) {
+            this.x = x;
+            this.y = y;
+            this.dx = dx;
+            this.dy = dy;
+            this.gravity = 0.1;
+            this.bounce = 0.7;
+            this.radius = 5 + Math.random() * 10;
+
+            this.draw = function() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            this.update = function() {
+                this.dy += this.gravity;
+                this.y += this.dy;
+
+                if (this.y + this.radius > canvas.height) {
+                    this.y = canvas.height - this.radius;
+                    this.dy *= -this.bounce;
+                }
+
+                this.x += this.dx;
+
+                // check for collision with text
+                var xdist = Math.abs(this.x - (canvas.width / 2));
+                var ydist = Math.abs(this.y - (canvas.height / 2));
+                var distance = Math.sqrt(xdist * xdist + ydist * ydist);
+
+                if (distance < this.radius + 50) {
+                    this.dy *= -1;
+                }
+
+                this.draw();
+            }
+        }
+
+        // create particles
+        for (var i = 0; i < text.length; i++) {
+            var x = Math.random() * canvas.width;
+            var y = Math.random() * canvas.height;
+            var dx = Math.random() - 0.5;
+            var dy = Math.random() - 0.5;
+            particles.push(new Particle(x, y, dx, dy));
+        }
+
+        // animate particles
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (var i = 0; i < particles.length; i++) {
+                particles[i].update();
+            }
+
+            // draw text
+            ctx.fillStyle = "white";
+            ctx.font = "bold 100px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+        }
+
+        animate();
+    </script>
 
     </body>
 </html>
