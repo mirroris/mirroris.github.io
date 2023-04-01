@@ -1,5 +1,4 @@
   html{
-    background-color:#313131;
     color:azure;
     font-family:'Playfair Display', serif;
   }
@@ -104,5 +103,5 @@
   position: absolute;
   height: 100vh;
   opacity:1; /* Set the transparency level here */
-  z-index:1;
+  z-index:-1;
 }
