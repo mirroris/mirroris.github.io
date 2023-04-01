@@ -96,6 +96,8 @@
   z-index:2;
 }
 .mirroris::before {
+  content:"";
+  display:block;
   background-image: url("img/RedAndBlue.jpg");
   background-size: cover;
   background-position: center;
