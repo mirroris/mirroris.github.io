@@ -92,7 +92,6 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  z-index:2;
 }
 .mirroris::before {
   content:"";
@@ -102,6 +101,5 @@
   background-position: center;
   position: absolute;
   height: 100vh;
-  opacity:1; /* Set the transparency level here */
-  z-index:-1;
+  opacity:0.5; /* Set the transparency level here */
 }
