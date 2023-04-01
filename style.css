@@ -2,13 +2,25 @@
     box-sizing: border-box;
     background-color:#313131;
     color:azure;
+    font-family:'Playfair Display', serif;
   }
   
   body {
     font-family: Arial, sans-serif;
-    margin: 50px;
+    margin: 0;
     padding: 0;
+    overflow:hidden;
   }
+
+  img {
+    position:absolulte;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+  }
+
   
   header {
     background-color: #424242;
@@ -66,4 +78,21 @@
   
   .features h2 {
     margin-top: 0
-  
+  }
+
+
+.mirroris {
+  background-image: url("img/RedAndBlue.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
