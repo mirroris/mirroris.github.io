@@ -1,125 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            About me @mirroris
-        </title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="boxes.css">
-        <style>
-            body {
-                background-color: black;
-                color: white;
-                font-size: 30px;
-                font-family: Arial, sans-serif;
-            }
-            canvas {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <div>
-                <!--add image/logo here-->
-                <img src="http://via.placeholder.com/100x100" alt="" />
-            </div>
-            <div class="headerMenu">
-                <a class="active" href="./index.html">Home</a>
-                <a href="learning/learning.html">Learning</a>
-                <a href="Gallery.html">Research</a>
-                <a href="upcoming Gigs.html">Portfolio</a>
-                <a href="songs.html">Gallery</a>
-                <a href="Contact.html">Hobbis</a>
-                <a href="media.html">Contact</a>
-            </div>
-        </div>
-        <div class="Mirroris">
-            Mirroris
-        </div>
-        
-    <canvas id="canvas"></canvas>
-    <script>
-        var canvas = document.getElementById("canvas");
-        var ctx = canvas.getContext("2d");
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rounded Corner Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mirror is what you see or beleive?</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Garalley</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+  <section class="hero">
+    <h2>Fuma Suenaga</h2>
+  <section class="features">
+    <h2>My profile</h2>
+    <div class="feature">
+      <i class="fas fa-desktop"></i>
+      <h3>Computer Science Student At Osaka University</h3>
+      <p>
+        My major is High Performance Computing. I deal with some problems earlier with optimization,
+        GPU. However, I like to study philosophy, phisics, and math.
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>My hobby</h3>
+      <p>
+        My hobby is drawing, walkinig or something that I can commit by myself.
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-code"></i>
+      <h3>Latest favorite</h3>
+      <p>親子丼</p>
+    </div>
+  </section>
+    <a href="#" class="cta">Learn More</a>
+  </section>
 
-        var text = "Gravity";
-        var particles = [];
 
-        // create particle class
-        function Particle(x, y, dx, dy) {
-            this.x = x;
-            this.y = y;
-            this.dx = dx;
-            this.dy = dy;
-            this.gravity = 0.1;
-            this.bounce = 0.7;
-            this.radius = 5 + Math.random() * 10;
-
-            this.draw = function() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fill();
-            }
-
-            this.update = function() {
-                this.dy += this.gravity;
-                this.y += this.dy;
-
-                if (this.y + this.radius > canvas.height) {
-                    this.y = canvas.height - this.radius;
-                    this.dy *= -this.bounce;
-                }
-
-                this.x += this.dx;
-
-                // check for collision with text
-                var xdist = Math.abs(this.x - (canvas.width / 2));
-                var ydist = Math.abs(this.y - (canvas.height / 2));
-                var distance = Math.sqrt(xdist * xdist + ydist * ydist);
-
-                if (distance < this.radius + 50) {
-                    this.dy *= -1;
-                }
-
-                this.draw();
-            }
-        }
-
-        // create particles
-        for (var i = 0; i < text.length; i++) {
-            var x = Math.random() * canvas.width;
-            var y = Math.random() * canvas.height;
-            var dx = Math.random() - 0.5;
-            var dy = Math.random() - 0.5;
-            particles.push(new Particle(x, y, dx, dy));
-        }
-
-        // animate particles
-        function animate() {
-            requestAnimationFrame(animate);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            for (var i = 0; i < particles.length; i++) {
-                particles[i].update();
-            }
-
-            // draw text
-            ctx.fillStyle = "white";
-            ctx.font = "bold 100px Arial, sans-serif";
-            ctx.textAlign = "center";
-            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
-        }
-
-        animate();
-    </script>
-
-    </body>
+  <footer>
+    <p>&copy; 2023 Mirroris Website. All rights reserved.</p>
+  </footer>
+</body>
 </html>
