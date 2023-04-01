@@ -1,4 +1,4 @@
-var element = document.querySelector('.my-element');
+var element = document.querySelector('.mirroris');
 var initialPosition = element.getBoundingClientRect().top + window.scrollY;
 var windowHeight = window.innerHeight;
 var initialOpacity = element.opacity;
