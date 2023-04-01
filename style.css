@@ -118,6 +118,7 @@
 }
 
 .progress{
+  top:100vh;
   height:50vh;
   width:100vw;
 }

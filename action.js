@@ -1,7 +1,6 @@
 var element = document.querySelector('.mirroris');
 var initialPosition = element.getBoundingClientRect().top + window.scrollY;
 var windowHeight = window.innerHeight;
-var initialOpacity = element.opacity;
 
 window.addEventListener('scroll', function() {
   var currentPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -11,7 +10,7 @@ window.addEventListener('scroll', function() {
     distanceFromTop = 0;
   }
 
-  var opacity = initialOpacity - 6*(distanceFromTop / windowHeight);
+  var opacity = opacity - 6*(distanceFromTop / windowHeight);
   opacity = opacity < 0 ? 0 :opacity;
   element.style.opacity = opacity;
 });
