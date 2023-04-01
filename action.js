@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     distanceFromTop = 0;
   }
 
-  var opacity = 1 - (distanceFromTop / windowHeight);
-
+  var opacity = initialOpacity - 6*(distanceFromTop / windowHeight);
+  opacity = opacity < 0 ? 0 :opacity;
   element.style.opacity = opacity;
 });
