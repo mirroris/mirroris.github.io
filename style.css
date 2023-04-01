@@ -116,7 +116,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .progress{
@@ -130,6 +130,7 @@
 }
 
 .oneday{
+  position:relative;
   margin:5vw,5vh;
   padding:10vw,10vh;
   background-color:#4a4a4a;
