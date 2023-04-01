@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checklist</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+      h1 {
+        text-align: center;
+      }
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      .delete {
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .done {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checklist</h1>
+      <input type="text" id="item" placeholder="Add item">
+      <ul id="list"></ul>
+    </div>
+    <script>
+      const itemInput = document.getElementById("item");
+      const list = document.getElementById("list");
+
+      function addItem() {
+        const item = itemInput.value;
+        if (item !== "") {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <span>${item}</span>
+            <span>
+              <span class="done">Done</span>
+              <span class="delete">Delete</span>
+            </span>
+          `;
+          list.appendChild(li);
+          itemInput.value = "";
+        }
+      }
+
+      function deleteItem(e) {
+        if (e.target.classList.contains("delete")) {
+          e.target.parentElement.parentElement.remove();
+        }
+      }
+
+      function markDone(e) {
+        if (e.target.classList.contains("done")) {
+          e.target.parentElement.parentElement.classList.toggle("done");
+        }
+      }
+
+      itemInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          addItem();
+        }
+      });
+
+      list.addEventListener("click", function (e) {
+        deleteItem(e);
+        markDone(e);
+      });
+    </script>
+  </body>
+</html>
