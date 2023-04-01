@@ -1,8 +1,8 @@
 
 function handleScroll(opac) {
-  let opacity = opac + (window.scrollY / window.innerHeight);
+  let opacity = opac -(window.scrollY / window.innerHeight);
   element.style.opacity = opacity < 0 ? 0 : opacity;
-  window.requestAnimationFrame(handleScroll(opacity));
+  window.requestAnimationFrame(handleScroll(opac));
 }
 
 function fadeoutScroll(element){
