@@ -124,6 +124,7 @@
   position:absolute;
   display:flex;
   margin:5vw, 5vh;
+  padding:5vw, 5vh;
   top:100vh;
   height:50vh;
   width:100vw;
@@ -131,6 +132,7 @@
 
 .oneday{
   margin:5vw,5vh;
+  padding:10vw,10vh;
   background-color:#4a4a4a;
   width:30vw;
   height:30vh;
