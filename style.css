@@ -56,7 +56,7 @@
   
   nav li {
     display: inline-block;
-    font-size:1%;
+    font-size:5%;
     height:3vh;
     margin-right: 20px;
     margin-left:20px;
@@ -69,7 +69,7 @@
   }
 
   nav li :focus{
-    border:double;
+    border:solid;
     border-radius:15%;
     border-color:#FFF;
   }
@@ -129,6 +129,7 @@
   margin: 0;
   padding: 0;
 }
+
 .mirroris::before {
     content:"";
     background-image: url("img/RedAndBlue.jpg");
@@ -141,18 +142,21 @@
     opacity:0.6;
 }
 
-mirroris h1{
+.mirroris h1{
   position:relative;
+  top:50vh;
+  left:10vh;
   opacity:1;
   color:#FFF;
   font-size:30px;
+  opacity:1;
 }
 
-.progress{
+.progressSheet{
   position:relative;
   display:flex;
   background-color:#02000b;
-  border-radius:15%;
+  border-radius:5vh;
   border-color:rgba(2a,62,ff,0.5);
   margin:5vw, 5vh;
   padding:5vw, 5vh;
@@ -173,4 +177,44 @@ mirroris h1{
   padding:10vw,10vh;
   background-color:#4a4a4a;
   width:40vw;
+}
+
+
+.progress {
+  position:absolute;
+  top:0px;
+  left:0px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.progress::before {
+    content:"";
+    background-image: url("img/DryFlower.jpg");
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity:0.6;
+}
+
+.progress h1{
+  position:relative;
+  bottom:50vh;
+  right:10vh;
+  opacity:1;
+  color:#FFF;
+  font-size:30px;
+  opacity:1;
 }

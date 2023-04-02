@@ -10,3 +10,14 @@ window.addEventListener('scroll', function() {
   opacity = opacity < 0 ? 0 :opacity;
   element.style.opacity = opacity;
 });
+
+
+var currentMenu = "mirroris";
+function slideRoll()  {
+  var prioritySlide = document.getElementsByClassName(this.className.replace("Trigger",""));
+  var leftEdge = 1000;
+  while(leftEdge>0){
+    prioritySlide.style.left = toString(leftEdge/10) + "vw";
+    leftEdge--;
+  }
+}
