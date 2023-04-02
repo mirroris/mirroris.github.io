@@ -65,11 +65,12 @@
   }
 
   nav li :hover{
-    font-weight:bold;
+    font-weight:Bold;
   }
 
   nav li :focus{
     border:#FFF;
+    border-radius:15%;
   }
   
   nav a {
@@ -126,7 +127,6 @@
   width:100vw;
   margin: 0;
   padding: 0;
-  opacity:100%;
 }
 .mirroris::before {
     content:"";
@@ -138,6 +138,13 @@
     bottom: 0px;
     left: 0px;
     opacity:0.6;
+}
+
+mirroris h1{
+  position:relative;
+  opacity:1;
+  color:#FFF;
+  font-size:30px;
 }
 
 .progress{
@@ -154,7 +161,7 @@
   margin-right:5vw;
   margin-bottom:5vh;
   height:50vh;
-  width:100vw;
+  width:90vw;
 }
 
 .oneday{
