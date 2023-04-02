@@ -38,7 +38,7 @@
     top:0;
     left:0;
     width:100vw;
-    height:10vh;
+    height:5vh;
     background-color: rgba(0, 0, 0);
     z-index:1;
   }
@@ -122,6 +122,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
+    opacity:0.4;
 }
 
 .progress{
@@ -140,9 +141,9 @@
 .oneday{
   position:relative;
   margin-top:5vh;
+  margin-left:5vw;
   border-color:#383839;
   padding:10vw,10vh;
   background-color:#4a4a4a;
-  width:30vw;
-  height:30vh;
+  width:40vw;
 }
