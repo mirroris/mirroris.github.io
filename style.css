@@ -29,7 +29,7 @@
     object-fit:cover;
   }
   footer{
-    position:absolute;
+    position:relative;
     margin-left:5vh;
     right:5vw;
   }
@@ -65,16 +65,26 @@
     margin-bottom:1vh;
   }
 
-  nav li :hover{
+  .mirrorisTrigger :hover{
     font-weight:Bold;
   }
 
-  nav li :focus{
+  .mirrorisTrigger :focus{
     border:solid;
     border-radius:15%;
     border-color:#FFF;
   }
   
+  .progresssTrigger :hover{
+    font-weight:Bold;
+  }
+
+  .progressTrigger :focus{
+    border:solid;
+    border-radius:15%;
+    border-color:#FFF;
+  }
+
   nav a {
     color: #333;
     text-decoration: none;
@@ -149,14 +159,13 @@
   left:10vh;
   opacity:1;
   color:#FFF;
-  font-size:30px;
+  font-size:100px;
   opacity:1;
 }
 .mirroris h2{
-  position:relative;
-  top:50vh;
-  left:10vh;
-  opacity:1;
+  position:absolute;
+  top:65vh;
+  opacity:0.6;
   color:#FFF;
   font-size:30px;
   opacity:1;
