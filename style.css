@@ -63,7 +63,7 @@
   }
 
   .mirrorisTrigger{
-    font-size:10vh;
+    font-size:3vh;
   }
   .mirrorisTrigger :hover{
     font-weight:Bold;
@@ -75,7 +75,7 @@
     border-color:#FFF;
   }
   .progressTrigger{
-    font-size:5vh;
+    font-size:3vh;
   }
   .progresssTrigger :hover{
     font-weight:Bold;
