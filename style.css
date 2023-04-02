@@ -7,7 +7,7 @@
     background-color:#313131;
     overflow-x:hidden;
     position:relative;
-    height: -webkit-fill-available;
+    height: 100vh;
   }
   
   body {
@@ -56,10 +56,20 @@
   
   nav li {
     display: inline-block;
-    font-size:10pw;
-    margin-right: 20px;
-    margin-top: 1vh;
+    font-size:1%;
     height:3vh;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+  }
+
+  nav li :hover{
+    font-weight:bold;
+  }
+
+  nav li :focus{
+    border:#FFF;
   }
   
   nav a {
@@ -116,6 +126,7 @@
   width:100vw;
   margin: 0;
   padding: 0;
+  opacity:100%;
 }
 .mirroris::before {
     content:"";
