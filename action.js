@@ -4,7 +4,7 @@ var leftEdge = 100.0;
 var prevTitle = "mirrorisTitle";
 var nextTitle;
 function slideRoll(className)  {
-  console.log(className+"is pushed");
+  console.log(className+" is pushed");
   var className = className.replace("Trigger","");
   prioritySlide = document.getElementsByClassName(className);
   prevTitle = nextTitle;
