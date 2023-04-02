@@ -75,8 +75,8 @@
     border-radius:15%;
     border-color:#FFF;
   }
-  progressTrigger{
-    font-size:10vh;
+  .progressTrigger{
+    font-size:5vh;
   }
   .progresssTrigger :hover{
     font-weight:Bold;
@@ -128,6 +128,7 @@
 
   .copyright{
     position:relative;
+    display:flex;
     margin-top:5vh;
     right:5vw;
   }
@@ -173,8 +174,8 @@
 .mirroris h2{
   position:absolute;
   font-size:5vh;
-  top:65vh;
-  left:5vh;
+  top:60vh;
+  left:7vh;
   opacity:0.6;
   color:#FFF;
 }
