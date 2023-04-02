@@ -14,7 +14,6 @@ window.addEventListener('scroll', function() {
 
 var currentMenu = "mirroris";
 function slideRoll()  {
-  this.style.border = "solid";
   var prioritySlide = document.getElementsByClassName(this.className.replace("Trigger",""));
   var leftEdge = 1000;
   while(leftEdge>0){

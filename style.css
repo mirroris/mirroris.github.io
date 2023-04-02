@@ -13,7 +13,10 @@
   body {
     position:relative;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 0;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:5vh;
     padding: 0;
     overflow-x:hidden;
     display:block;
@@ -27,11 +30,6 @@
     width:100vw;
     height:100vh;
     object-fit:cover;
-  }
-  footer{
-    position:relative;
-    margin-left:5vh;
-    right:5vw;
   }
   
   header {
@@ -123,6 +121,11 @@
     margin-top: 0
   }
 
+  footer{
+    position:relative;
+    margin-top:5vh;
+    right:5vw;
+  }
 
 .mirroris {
   position:absolute;
@@ -164,11 +167,11 @@
 }
 .mirroris h2{
   position:absolute;
+  font-size:50px;
   top:65vh;
   opacity:0.6;
   color:#FFF;
   font-size:30px;
-  opacity:1;
 }
 
 .progressSheet{
