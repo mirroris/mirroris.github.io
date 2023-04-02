@@ -30,7 +30,8 @@
   }
   footer{
     position:absolute;
-    top:300vh;
+    margin-left:5vh;
+    right:5vw;
   }
   
   header {
@@ -143,6 +144,15 @@
 }
 
 .mirroris h1{
+  position:absolute;
+  top:50vh;
+  left:10vh;
+  opacity:1;
+  color:#FFF;
+  font-size:30px;
+  opacity:1;
+}
+.mirroris h2{
   position:relative;
   top:50vh;
   left:10vh;
