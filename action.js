@@ -6,7 +6,10 @@ function slideRoll(className)  {
   console.log(className+"is pushed");
   var className = className.replace("Trigger","");
   prioritySlide = document.getElementsByClassName(className);
-  if(prioritySlide != className)movement();
+  if(className != currentMenu) {
+    className = currentMenu;
+    movement();
+  }
   leftEdge = 100.0;
 };
 
