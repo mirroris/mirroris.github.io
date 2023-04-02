@@ -35,11 +35,12 @@
   
   header {
     position:absolute;
+    color:#FFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     top:0;
     left:0;
     width:100vw;
     height:5vh;
-    background-color: rgba(0, 0, 0);
     z-index:1;
   }
   
@@ -55,7 +56,10 @@
   
   nav li {
     display: inline-block;
+    font-size:10pw;
     margin-right: 20px;
+    margin-top: 1vh;
+    height:3vh;
   }
   
   nav a {
@@ -122,11 +126,11 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity:0.4;
+    opacity:0.6;
 }
 
 .progress{
-  position:absolute;
+  position:relative;
   display:flex;
   background-color:#02000b;
   border-radius:15%;
@@ -134,6 +138,10 @@
   margin:5vw, 5vh;
   padding:5vw, 5vh;
   top:100vh;
+  margin-top:5vh;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:5vh;
   height:50vh;
   width:100vw;
 }
