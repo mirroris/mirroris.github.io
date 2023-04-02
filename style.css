@@ -69,7 +69,7 @@
     font-weight:Bold;
   }
 
-  .mirrorisTrigger +ul :focus{
+  .mirrorisTrigger  :focus{
     border:solid;
     border-radius:15%;
     border-color:#FFF;
