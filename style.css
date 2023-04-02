@@ -5,6 +5,7 @@
   html{
     color:azure;
     background-color:#313131;
+    overflow-x:hidden;
   }
   
   body {
@@ -13,6 +14,7 @@
     padding: 0;
     overflow-x:hidden;
     display:block;
+    position:relative;
   }
 
   img {
@@ -33,7 +35,8 @@
     left:0;
     width:100vh;
     height:10vh;
-    background-color: rgba(0, 0, 0, 1);
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index:1;
   }
   
@@ -106,17 +109,17 @@
   width:100vw;
   margin: 0;
   padding: 0;
-  background-image: url("img/RedAndBlue.jpg");
-  background-size:cover;
 }
 .mirroris::before {
     content:"";
+    background-image: url("img/RedAndBlue.jpg");
+    background-size:cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.4);
+    opacity:0.5;
 }
 
 .progress{
