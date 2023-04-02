@@ -69,8 +69,9 @@
   }
 
   nav li :focus{
-    border:#FFF;
+    border:double;
     border-radius:15%;
+    border-color:#FFF;
   }
   
   nav a {
