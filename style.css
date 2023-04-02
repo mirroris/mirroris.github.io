@@ -6,6 +6,7 @@
     color:azure;
     background-color:#313131;
     overflow-x:hidden;
+    position:relative;
   }
   
   body {
