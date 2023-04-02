@@ -121,7 +121,7 @@
     margin-top: 0
   }
 
-  footer{
+  .copyright{
     position:relative;
     margin-top:5vh;
     right:5vw;
@@ -162,16 +162,16 @@
   left:10vh;
   opacity:1;
   color:#FFF;
-  font-size:100px;
+  font-size:10vh;
   opacity:1;
 }
 .mirroris h2{
   position:absolute;
-  font-size:50px;
+  font-size:5vh;
   top:65vh;
+  left:5vh;
   opacity:0.6;
   color:#FFF;
-  font-size:30px;
 }
 
 .progressSheet{
