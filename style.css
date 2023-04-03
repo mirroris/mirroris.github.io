@@ -56,8 +56,8 @@
     display: inline-block;
     font-size:5%;
     height:3vh;
-    margin-right: 20px;
-    margin-left:20px;
+    margin-right: 3vw;
+    margin-left:3vw;
     margin-top: 1vh;
     margin-bottom:1vh;
   }
@@ -170,7 +170,7 @@
   color:#FFF;
   font-size:10vh;
 }
-.mirrorisSub h2{
+.mirrorisSub {
   position:absolute;
   font-size:5vh;
   top:60vh;

@@ -1,8 +1,8 @@
 var currentMenu = "mirroris";
 var nextSlide;
-var prevSlide;
+var prevSlide = document.getElementsByClassName("mirroris")[0];
 var leftEdge = 100;
-var prevTitle = "mirrorisTitle";
+var prevTitle = document.getElementsByClassName("mirrorisTitle")[0];
 var nextTitle;
 function slideRoll(className)  {
   var arg = className;
