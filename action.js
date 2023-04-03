@@ -11,6 +11,7 @@ function slideRoll(className)  {
   nextSlide = document.getElementsByClassName(className);
   prevTitle = nextTitle;
   nextTitle = document.getElementsByClassName(className+"Title");
+  console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
   if(className != currentMenu) {
     className = currentMenu;
     nextSlide.style.visibility = "visible";
