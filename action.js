@@ -12,8 +12,8 @@ function slideRoll(className)  {
   prevSlide = nextSlide;
   nextSlide = document.getElementsByClassName(searchName)[0];
   prevTitle = nextTitle;
-  nextTitle = document.getElementsByClassName(searchName+"Title");
-  console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide)[0];
+  nextTitle = document.getElementsByClassName(searchName+"Title")[0];
+  console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
   if(searchName != currentMenu) {
     currentMenu = searchName;
     nextSlide.style.visibility = "visible";
@@ -28,6 +28,7 @@ function slideRoll(className)  {
 
 function movement(){
   if(leftEdge>0){
+    console.log("leftEdge = " + leftEdge);
     let num = leftEdge;
     nextSlide.style.left = num.toString() + "vw";
     prevSlide.style.right = num.toString() + "vw";
