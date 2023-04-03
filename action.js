@@ -5,8 +5,9 @@ var leftEdge = 100;
 var prevTitle = "mirrorisTitle";
 var nextTitle;
 function slideRoll(className)  {
+  var arg = className;
   console.log(className+" is pushed");
-  var searchName = searchName.replace("Trigger","");
+  var searchName = arg.replace("Trigger","");
   console.log("className = " + searchName);
   prevSlide = nextSlide;
   nextSlide = document.getElementsByClassName(searchName);
