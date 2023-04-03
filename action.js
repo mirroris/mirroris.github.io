@@ -13,10 +13,10 @@ function slideRoll(className)  {
   nextTitle = document.getElementsByClassName(className+"Title");
   if(className != currentMenu) {
     className = currentMenu;
-    nextSlide.style.visiblity = "visible";
+    nextSlide.style.visibility = "visible";
     movement();
     emergence();
-    prevSlide.style.visiblity = "hidden"
+    prevSlide.style.visibility = "hidden"
     prevSlide.style.right = "100vw";
   }
   leftEdge = 100.0;
