@@ -9,9 +9,7 @@ function slideRoll(className)  {
   console.log(className+" is pushed");
   var searchName = arg.replace("Trigger","");
   console.log("className = " + searchName);
-  prevSlide = nextSlide;
   nextSlide = document.getElementsByClassName(searchName)[0];
-  prevTitle = nextTitle;
   nextTitle = document.getElementsByClassName(searchName+"Title")[0];
   console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
   if(searchName != currentMenu) {
@@ -24,6 +22,8 @@ function slideRoll(className)  {
   }
   leftEdge = 100.0;
   titleOpacity=0;
+  prevSlide = nextSlide;
+  prevTitle = nextTitle;
 };
 
 function movement(){
