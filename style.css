@@ -160,7 +160,7 @@
     opacity:0.6;
 }
 
-.mirroris h1{
+.mirrorisTitle {
   position:absolute;
   top:50vh;
   left:10vh;
@@ -169,7 +169,7 @@
   font-size:10vh;
   opacity:1;
 }
-.mirroris h2{
+.mirrorisSub h2{
   position:absolute;
   font-size:5vh;
   top:60vh;
@@ -231,7 +231,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity:0.6;
+    opacity:0.8;
 }
 
 .progress h1{
