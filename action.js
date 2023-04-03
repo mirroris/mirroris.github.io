@@ -16,11 +16,11 @@ function slideRoll(className)  {
   console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
   if(searchName != currentMenu) {
     currentMenu = searchName;
-    nextSlide.style.visibility = "visible";
+    nextSlide[0].style.visibility = "visible";
     movement();
     emergence();
-    prevSlide.style.visibility = "hidden"
-    prevSlide.style.right = "100vw";
+    prevSlide[0].style.visibility = "hidden"
+    prevSlide[0].style.right = "100vw";
   }
   leftEdge = 100.0;
   titleOpacity=0;
@@ -29,10 +29,10 @@ function slideRoll(className)  {
 function movement(){
   if(leftEdge>0){
     let num = leftEdge;
-    nextSlide.style.left = num.toString() + "vw";
-    prevSlide.style.right = num.toString() + "vw";
-    nextTitle.style.opacity = ((100 -leftEdge)/100.0).toString;
-    prevTitle.style.opacity = (leftEdge/100.0).toString();
+    nextSlide[0].style.left = num.toString() + "vw";
+    prevSlide[0].style.right = num.toString() + "vw";
+    nextTitle[0].style.opacity = ((100 -leftEdge)/100.0).toString;
+    prevTitle[0].style.opacity = (leftEdge/100.0).toString();
     leftEdge--;
     setTimeout(movement,50);
   }
@@ -40,7 +40,7 @@ function movement(){
 
 function emergence(){
   if(titleOpacity<1){
-    nextTitle.style.opacity = titleOpacity;
+    nextTitle[0].style.opacity = titleOpacity;
     titleOpacity+=0.01;
     setTimeout(emergence, 10);
   }
