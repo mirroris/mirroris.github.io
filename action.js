@@ -6,14 +6,15 @@ var prevTitle = "mirrorisTitle";
 var nextTitle;
 function slideRoll(className)  {
   console.log(className+" is pushed");
-  var className = className.replace("Trigger","");
+  var searchName = searchName.replace("Trigger","");
+  console.log("className = " + searchName);
   prevSlide = nextSlide;
-  nextSlide = document.getElementsByClassName(className);
+  nextSlide = document.getElementsByClassName(searchName);
   prevTitle = nextTitle;
-  nextTitle = document.getElementsByClassName(className+"Title");
+  nextTitle = document.getElementsByClassName(searchName+"Title");
   console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
-  if(className != currentMenu) {
-    className = currentMenu;
+  if(searchName != currentMenu) {
+    currentMenu = searchName;
     nextSlide.style.visibility = "visible";
     movement();
     emergence();
