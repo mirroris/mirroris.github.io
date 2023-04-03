@@ -32,7 +32,7 @@ function movement(){
     let num = leftEdge;
     nextSlide.style.left = num.toString() + "vw";
     prevSlide.style.right = num.toString() + "vw";
-    nextTitle.style.opacity = ((100 -leftEdge)/100.0).toString;
+    nextTitle.style.opacity = ((100 -leftEdge)/100.0).toString();
     prevTitle.style.opacity = (leftEdge/100.0).toString();
     leftEdge--;
     setTimeout(movement,50);

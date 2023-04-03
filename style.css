@@ -135,6 +135,7 @@
   position:absolute;
   top:0px;
   left:0vw;
+  right:100vw;
   color: white;
   font-size: 30px;
   text-align: center;
@@ -210,6 +211,7 @@
   visibility:hidden;
   top:0px;
   left:0vw;
+  right:100vw;
   color: white;
   font-size: 30px;
   text-align: center;
