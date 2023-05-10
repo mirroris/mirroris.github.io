@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mirroris Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="#">
-        <script src = "action.js"> </script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class="mirrorisTrigger" onclick = "slideRoll(this.className)">Profile</li>
-                    <li class="progressTrigger" onclick = "slideRoll(this.className)">Progress</li>
-                    <li>Study</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-        <div class="mirroris">
-            <h1 class = "title">Hello, World!</h1>
-            <h2>
-                I'm Fuma Suenaga.
-            </h2>
-        </div>
-        <div class="progress">
-            <h1 class = "title">Progress</h1>
-            <h2>
-                research, meal, hobby.
-            </h2>
-        </div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="progressSheet">
-            <ul>
-            <li class = "oneday"></li> 
-            </ul>
-        </div>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Introduce yourself here.</p>
+      </section>
 
-
-        <div class="copyright">
-            <p>&copy; 2023 Mirroris Website. All rights reserved.</p>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+          <!-- Your portfolio items go here -->
         </div>
-    </body>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me here.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Your Name</p>
+    </footer>
+
+    <script>
+        // Add a smooth scroll effect to the navigation links
+
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+
+            const targetId = link.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+            });
+        });
+        });
+
+    </script>
+  </body>
 </html>

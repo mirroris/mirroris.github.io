@@ -1,245 +1,71 @@
-  
-  * {
-    font-family:'Playfair Display', serif;
-  }
-  html{
-    color:azure;
-    background-color:#313131;
-    overflow-x:hidden;
-    position:relative;
-    height: 100vh;
-  }
-  
-  body {
-    position:relative;
-    font-family: Arial, sans-serif;
-    margin-top: 0;
-    margin-left:0;
-    margin-right:0;
-    padding: 0;
-    overflow-x:hidden;
-    display:block;
-    height:100%;
-  }
+/* Basic styles */
 
-  img {
-    position:absolulte;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    object-fit:cover;
-  }
-  
-  header {
-    position:absolute;
-    color:#FFF;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    top:0;
-    left:0;
-    width:100vw;
-    height:8vh;
-    z-index:1;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    font-size:5%;
-    height:3vh;
-    margin-right: 20px;
-    margin-left:20px;
-    margin-top: 1vh;
-    margin-bottom:1vh;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  .mirrorisTrigger{
-    font-size:3vh;
-  }
-  .mirrorisTrigger :hover{
-    font-weight:Bold;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  .mirrorisTrigger  :focus{
-    border:solid;
-    border-radius:15%;
-    border-color:#FFF;
-  }
-  .progressTrigger{
-    font-size:3vh;
-  }
-  .progresssTrigger :hover{
-    font-weight:Bold;
-  }
+h1 {
+  margin: 0;
+}
 
-  .progressTrigger :focus{
-    border:solid;
-    border-radius:15%;
-    border-color:#FFF;
-  }
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  nav a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .hero {
-    position:relative;
-    background-color: #313131;
-    border-radius: 20px 20px 0 0;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .hero h2 {
-    margin-top: 0;
-  }
-  
-  .cta {
-    background-color: #FF9C9C;
-    border-radius: 10px;
-    color: #FFF;
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
-  .features {
-    background-color: #FFF;
-    border-radius: 0 0 20px 20px;
-    padding: 50px;
-  }
-  
-  .features h2 {
-    margin-top: 0
-  }
-
-  .copyright{
-    position:relative;
-    margin-top:5vh;
-    right:5vw;
-  }
-
-.mirroris {
-  position:absolute;
-  top:0px;
-  left:0vw;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width:100vw;
+ul {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.mirroris::before {
-    content:"";
-    background-image: url("img/RedAndBlue.jpg");
-    background-size:cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0vw;
-    opacity:0.6;
+li {
+  margin: 0 10px;
 }
 
-.mirroris h1{
-  position:absolute;
-  top:50vh;
-  left:10vh;
-  opacity:1;
-  color:#FFF;
-  font-size:10vh;
-  opacity:1;
-}
-.mirroris h2{
-  position:absolute;
-  font-size:5vh;
-  top:60vh;
-  left:7vh;
-  opacity:0.6;
-  color:#FFF;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.progressSheet{
-  position:relative;
-  display:block;
-  background-color:#02000b;
-  border-radius:5vh;
-  border-color:rgba(2a,62,ff,0.5);
-  margin:5vw, 5vh;
-  padding:5vw, 5vh;
-  top:100vh;
-  margin-top:5vh;
-  margin-left:5vw;
-  margin-right:5vw;
-  margin-bottom:5vh;
-  height:50vh;
-  width:90vw;
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.oneday{
-  position:relative;
-  margin-top:5vh;
-  margin-left:5vw;
-  border-color:#383839;
-  background-color:#4a4a4a;
-  width:40vw;
+section {
+  margin-bottom: 40px;
 }
 
+h2 {
+  margin-top: 0;
+}
 
-.progress {
-  position:absolute;
-  top:0px;
-  left:0vw;
-  color: white;
-  font-size: 30px;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width:100vw;
-  margin: 0;
-  padding: 0;
 }
 
-.progress::before {
-    content:"";
-    background-image: url("img/DryFlower.jpg");
-    background-size:cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity:0.6;
+/* Portfolio styles */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
-.progress h1{
-  position:relative;
-  bottom:50vh;
-  right:10vh;
-  opacity:1;
-  color:#FFF;
-  font-size:30px;
-  opacity:1;
+.gallery img {
+  width: 100%;
+  height: auto;
 }

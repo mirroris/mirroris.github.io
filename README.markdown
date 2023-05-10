@@ -4,28 +4,28 @@ My Ego is here!
 ## Profile 
 My real name: Fuma Suenaga
 
-What do you do : CS student
-
-My hobbies: cooking (except learning)
+What do you do : CS student 
 
 ## Content
 
-# Now Editing
-・相対性理論について
+## Note
 
-・方法序説読解
+# how to add portofolio in html?
+```
+<div class="gallery">
+  <a href="project1.html">
+    <img src="project1.jpg" alt="Project 1">
+    <h3>Project 1</h3>
+  </a>
 
-・機械学習に必要な解析学～カーネル法
+  <a href="project2.html">
+    <img src="project2.jpg" alt="Project 2">
+    <h3>Project 2</h3>
+  </a>
 
-# INTRODUCTION
-I'll introduce some my ego. It consists of philosophy, math, and so on.
-These are sometimes based of the background of computer science.
-
-"I'm computer science student, so why do I also learn the others?"
-
-"How to study? What should I study?"
-
-is one of the interesting topics in this site.
+  <!-- Add more portfolio items as needed -->
+</div>
+```
 
 # REFERENCE 
 When you refer to this site, please write this info in the reference list!
