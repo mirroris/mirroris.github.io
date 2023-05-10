@@ -1,9 +1,70 @@
 /* Basic styles */
 
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+=======
+  img {
+    position:absolulte;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+  }
+  
+  header {
+    position:absolute;
+    color:#FFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top:0;
+    left:0;
+    width:100vw;
+    height:8vh;
+    z-index:1;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    font-size:5%;
+    height:3vh;
+    margin-right: 3vw;
+    margin-left:3vw;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+  }
+
+  .mirrorisTrigger{
+    font-size:3vh;
+  }
+  .mirrorisTrigger :hover{
+    font-weight:Bold;
+  }
+
+  .mirrorisTrigger  :focus{
+    border:solid;
+    border-radius:15%;
+    border-color:#FFF;
+  }
+  .progressTrigger{
+    font-size:3vh;
+  }
+  .progresssTrigger :hover{
+    font-weight:Bold;
+  }
+>>>>>>> a501b0928dfb5bbb99da24aa82cd0cdfdd0b798e
 
 header {
   background-color: #333;
@@ -20,9 +81,27 @@ nav {
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 ul {
   display: flex;
   list-style: none;
+=======
+.mirroris {
+  position:absolute;
+  top:0px;
+  left:0vw;
+  right:100vw;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility:visible;
+  height: 100vh;
+  width:100vw;
+>>>>>>> a501b0928dfb5bbb99da24aa82cd0cdfdd0b798e
   margin: 0;
   padding: 0;
 }
@@ -31,6 +110,7 @@ li {
   margin: 0 10px;
 }
 
+<<<<<<< HEAD
 a {
   color: #fff;
   text-decoration: none;
@@ -44,16 +124,70 @@ main {
 
 section {
   margin-bottom: 40px;
+=======
+.mirrorisTitle {
+  position:absolute;
+  top:50vh;
+  left:10vh;
+  opacity:1;
+  color:#FFF;
+  font-size:10vh;
+}
+.mirrorisSub {
+  position:absolute;
+  font-size:5vh;
+  top:60vh;
+  left:7vh;
+  opacity:0.6;
+  color:#FFF;
+}
+
+.progressSheet{
+  position:relative;
+  display:block;
+  background-color:#02000b;
+  border-radius:5vh;
+  border-color:rgba(2a,62,ff,0.5);
+  padding:5vw, 5vh;
+  top:100vh;
+  margin-top:5vh;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:5vh;
+  height:50vh;
+  width:90vw;
+}
+
+.oneday{
+  position:relative;
+  top:1vh;
+  margin-top:5vh;
+  margin-left:5vw;
+  border-color:#383839;
+  background-color:#4a4a4a;
+  width:40vw;
+>>>>>>> a501b0928dfb5bbb99da24aa82cd0cdfdd0b798e
 }
 
 h2 {
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
+=======
+.progress {
+  position:absolute;
+  visibility:hidden;
+  top:0px;
+  left:0vw;
+  right:100vw;
+  color: white;
+  font-size: 30px;
+>>>>>>> a501b0928dfb5bbb99da24aa82cd0cdfdd0b798e
   text-align: center;
 }
 

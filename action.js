@@ -1,28 +1,39 @@
 var currentMenu = "mirroris";
-var prioritySlide;
-var leftEdge = 100.0;
-var prevTitle = "mirrorisTitle";
+var nextSlide;
+var prevSlide = document.getElementsByClassName("mirroris")[0];
+var leftEdge = 100;
+var prevTitle = document.getElementsByClassName("mirrorisTitle")[0];
 var nextTitle;
 function slideRoll(className)  {
+  var arg = className;
   console.log(className+" is pushed");
-  var className = className.replace("Trigger","");
-  prioritySlide = document.getElementsByClassName(className);
-  prevTitle = nextTitle;
-  nextTitle = document.getElementsByClassName(className+"Title");
-  if(className != currentMenu) {
-    className = currentMenu;
+  var searchName = arg.replace("Trigger","");
+  console.log("className = " + searchName);
+  nextSlide = document.getElementsByClassName(searchName)[0];
+  nextTitle = document.getElementsByClassName(searchName+"Title")[0];
+  console.log("currentSlide = " + prevSlide + ", nextSlide = " + nextSlide);
+  if(searchName != currentMenu) {
+    currentMenu = searchName;
+    nextSlide.style.visibility = "visible";
     movement();
     emergence();
+    prevSlide.style.visibility = "hidden"
+    prevSlide.style.right = "100vw";
   }
   leftEdge = 100.0;
   titleOpacity=0;
+  prevSlide = nextSlide;
+  prevTitle = nextTitle;
 };
 
 function movement(){
   if(leftEdge>0){
+    console.log("leftEdge = " + leftEdge);
     let num = leftEdge;
-    prioritySlide.style.left = num.toString + "vw";
-    prevTitle.style.opacity = leftEdge/100.0;
+    nextSlide.style.left = num.toString() + "vw";
+    prevSlide.style.right = num.toString() + "vw";
+    nextTitle.style.opacity = ((100 -leftEdge)/100.0).toString();
+    prevTitle.style.opacity = (leftEdge/100.0).toString();
     leftEdge--;
     setTimeout(movement,50);
   }
