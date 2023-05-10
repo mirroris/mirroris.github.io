@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chisel</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+<!-- templatemo 357 slate -->
+<!-- 
+Slate Template 
+http://www.templatemo.com/preview/templatemo_357_slate 
+-->
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+<script language="javascript" type="text/javascript">
+function clearText(field){
+
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<!--////// CHOOSE ONE OF THE 3 PIROBOX STYLES  \\\\\\\-->
+<link href="css_pirobox/white/style.css" media="screen" title="shadow" rel="stylesheet" type="text/css" />
+<!--<link href="css_pirobox/white/style.css" media="screen" title="white" rel="stylesheet" type="text/css" />
+<link href="css_pirobox/black/style.css" media="screen" title="black" rel="stylesheet" type="text/css" />-->
+<!--////// END  \\\\\\\-->
+
+<!--////// INCLUDE THE JS AND PIROBOX OPTION IN YOUR HEADER  \\\\\\\-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/piroBox.1_2.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$().piroBox({
+			my_speed: 600, //animation speed
+			bg_alpha: 0.5, //background opacity
+			radius: 4, //caption rounded corner
+			scrollImage : false, // true == image follows the page, false == image remains in the same open position
+			pirobox_next : 'piro_next', // Nav buttons -> piro_next == inside piroBox , piro_next_out == outside piroBox
+			pirobox_prev : 'piro_prev',// Nav buttons -> piro_prev == inside piroBox , piro_prev_out == outside piroBox
+			close_all : '.piro_close',// add class .piro_overlay(with comma)if you want overlay click close piroBox
+			slideShow : 'slideshow', // just delete slideshow between '' if you don't want it.
+			slideSpeed : 4 //slideshow duration in seconds(3 to 6 Recommended)
+	});
+});
+</script>
+<!--////// END  \\\\\\\-->
+
+</head>
+
+<body>
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="#">Mirroris</a></h1></div>
+        <div class="cleaner"></div>
+    </div> <!-- end of header -->
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a>
+                <ul>
+                    <li><a href="#submenu1">Sub menu 1</a></li>
+                    <li><a href="#submenu2">Sub menu 2</a></li>
+                    <li><a href="#submenu3">Sub menu 3</a></li>
+              	</ul>
+            </li>
+            <li><a href="portfolio.html" class="selected">Portfolio</a>
+                <ul>
+                    <li><a href="#submenu1">Sub menu 1</a></li>
+                    <li><a href="#submenu2">Sub menu 2</a></li>
+                    <li><a href="#submenu3">Sub menu 3</a></li>
+                    <li><a href="#submenu4">Sub menu 4</a></li>
+                    <li><a href="#submenu5">Sub menu 5</a></li>
+              	</ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="search_box">
+            <form action="#" method="get">
+                <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+            </form>
+        </div>
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+
+    <div id="editor" style="height: 600px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    function sleep(a){
+        var dt1 = new Date().getTime();
+        var dt2 = new Date().getTime();
+        while (dt2 < dt1 + a){
+            dt2 = new Date().getTime();
+        }
+        return;
+    }
+    var editor = ace.edit("editor");
+    editor.$blockScrolling = Infinity;
+    editor.setOptions({
+      enableBasicAutocompletion: true,
+      enableSnippets: true,
+      enableLiveAutocompletion: true
+    });
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/python");
+    
+    <div id="templatemo_footer">
+    	Copyright © 2048 Your Company Name
+    </div>
+</div>
+
+</body>
+</html>
