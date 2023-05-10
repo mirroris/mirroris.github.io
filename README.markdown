@@ -11,6 +11,7 @@ What do you do : CS student
 ## Note
 
 # how to add portofolio in html?
+Add your portfolio items in the gallery section:
 ```
 <div class="gallery">
   <a href="project1.html">
