@@ -57,6 +57,8 @@ ddsmoothmenu.init({
 <!--////// INCLUDE THE JS AND PIROBOX OPTION IN YOUR HEADER  \\\\\\\-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/piroBox.1_2.js"></script>
+<script type="text/javascript" src="js/submit.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function() {
 	$().piroBox({
@@ -124,7 +126,7 @@ $(document).ready(function() {
                     <div class="RightContent">
                         <form>
                             <label for="code">Code</label>
-                            <textarea id = "code"></textarea>
+                            <textarea id="code" name="code"></textarea>
                             <select id="language" name = "language">
                                 <option value="c">c</option>
                                 <option value="cpp">c++</option>
@@ -134,7 +136,7 @@ $(document).ready(function() {
                                 <option value="python3">python3</option>
                             </select>
                             <input type = "button" style = "background-color: #747474;"value = "run">
-                            <input type = "button" value = "submit">
+                            <input type = "button" value = "submit" onclick = "submitCode()">
                         </form>
                     </div>
                     <div class="LeftContent">

@@ -48,7 +48,7 @@
 .LeftContent
 {
     position:relative;
-    top:5%;
+    top:0%;
     width:47%;
     height:100%;
     background-color: white;
@@ -90,6 +90,7 @@ form{
     border-radius: 8% 4%;
     background-color: #f8f8f8;
     resize:none;
+    height: 600px;
 }
 
 input[type=button] {
