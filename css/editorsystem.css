@@ -47,9 +47,10 @@
 
 .LeftContent
 {
+    position:relative;
+    top:5%;
     width:47%;
     height:100%;
-    margin: 5% 2%;
     background-color: white;
     overflow: auto;
     border:black;
@@ -79,14 +80,16 @@ form{
 }
 
 #code {
+    position:relative;
+    width: 95%;
+    height: 50%;
+    display:block;
     padding: 1% 2%;
     box-sizing: border-box;
     border: 2% solid #ccc;
     border-radius: 8% 4%;
     background-color: #f8f8f8;
     resize:none;
-    width: 95%;
-    height: 50%;
 }
 
 input[type=button] {
