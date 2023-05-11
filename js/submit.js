@@ -1,6 +1,6 @@
 function submitCode(){
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://api.paiza.io/runners/create');
+  xhr.open('GET', 'https://api.paiza.io/runners/create');
   xhr.requestType = 'json';
   var params = {
     source_code:document.forms['code'],

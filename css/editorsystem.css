@@ -86,7 +86,7 @@ form{
     display:block;
     padding: 1% 2%;
     box-sizing: border-box;
-    border: 2% solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 8% 4%;
     background-color: black;
     color:white;

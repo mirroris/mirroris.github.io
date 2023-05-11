@@ -137,6 +137,34 @@ $(document).ready(function() {
                             </select>
                             <input type = "button" style = "background-color: #747474;"value = "run">
                             <input type = "button" value = "submit" onclick = "submitCode()">
+
+                            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.35.3/js/jquery.terminal.min.js"></script>
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.35.3/css/jquery.terminal.min.css" rel="stylesheet"/>
+                            <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+                            <link href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
+                            jQuery(function($, undefined) {
+                                $('#term_demo').terminal({
+                                    add: function(a, b) {
+                                        this.echo(a + b);
+                                    },
+                                    re: function(re, str) {
+                                    if (re instanceof RegExp && re.test(str)) {
+                                        this.echo(str + ' [[;green;]match]');
+                                    }
+                                    },
+                                    foo: 'foo.php',
+                                    bar: {
+                                        sub: function(a, b) {
+                                            this.echo(a - b);
+                                        }
+                                    }
+                                }, {
+                                    height: 200,
+                                    width: 450,
+                                    prompt: 'demo> '
+                                });
+                            });
                         </form>
 
                     </div>
