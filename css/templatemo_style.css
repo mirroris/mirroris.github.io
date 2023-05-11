@@ -85,7 +85,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	color:#d6e5e4; 
 	margin: 0 0 5px 0; 
 	padding: 0 0 0 20px; 
-	background: url(../images/templatemo_list.png) no-repeat scroll 0 5px;  
+	background: #4a4a4a;  
 }
 
 .templatemo_list li a { 
@@ -101,20 +101,20 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	width: 960px;
 	margin: 0 auto;
 	padding: 30px 10px;
-	background: url(../images/templatemo_main.jpg) repeat-y
+	background:#363636;
 }
 
 #templatemo_header {
 	width: 960px;
 	padding: 40px 0 20px;
-	background: url(../images/templatemo_hr_divider.jpg) bottom repeat-x
+	background: #00897b;
 }
 
 #templatemo_menu { 
 	height: 42px;
 	padding: 5px 0;
 	margin-bottom: 10px;
-	background: url(../images/templatemo_hr_divider.jpg) repeat-x bottom
+	background: #00897b;
 }
 
 #templatemo_slider {
@@ -126,7 +126,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 #templatemo_main {
 	clear: both;
 	padding: 40px 0;
-	background: url(../images/templatemo_hr_divider.jpg) repeat-x bottom
+	background: #363636
 }
 
 #templatemo_bottom {
@@ -134,7 +134,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	margin: 30px 0 10px;
 	padding: 30px 10px 10px;
 	font-size: 11px;
-	background: #00564d url(../images/templatemo_hr_divider.jpg) repeat-x bottom;
+	background: #00564d;
 }
 
 #templatemo_footer {
@@ -169,7 +169,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	float: right; 
 	width: 250px; 
 	height: 40px; 
-	background: url(../images/templatemo_search.png) no-repeat; 
+	background: #969696; 
 }
 
 #search_box form { 
