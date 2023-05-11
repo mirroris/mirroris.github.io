@@ -6,6 +6,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="css/editorsystem.css" rel="stylesheet" type="text/css" />
 <!-- templatemo 357 slate -->
 <!-- 
 Slate Template 
@@ -113,29 +114,33 @@ $(document).ready(function() {
         <br style="clear: left" />
     </div> <!-- end of templatemo_menu -->
 
-    <div id="editor" style="height: 600px"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-    function sleep(a){
-        var dt1 = new Date().getTime();
-        var dt2 = new Date().getTime();
-        while (dt2 < dt1 + a){
-            dt2 = new Date().getTime();
-        }
-        return;
-    }
-    var editor = ace.edit("editor");
-    editor.$blockScrolling = Infinity;
-    editor.setOptions({
-      enableBasicAutocompletion: true,
-      enableSnippets: true,
-      enableLiveAutocompletion: true
-    });
-    editor.setTheme("ace/theme/monokai");
-    editor.getSession().setMode("ace/mode/python");
-    
+    <div class = "Problem">
+        <div class="Container">
+            <div class="Header">
+                <p>The Header div height is not fixed (But he can be if you want it to)</p>
+                <p>This Layout has been tested on: IE10, IE9, IE8, FireFox, Chrome, Safari, Opera. using Pure CSS 2.1 only</p>
+            </div>
+            <div class="Content">
+                <div class="Wrapper">
+                    <div class="RightContent">
+                        <p>You can fix the width of this content.</p>
+                        <p>if you wont, his width will stretch just as it needs to.</p>
+                    </div>
+                    <div class="LeftContent">
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                        <p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p><p>this will scroll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="templatemo_footer">
     	Copyright © 2048 Your Company Name
     </div>
