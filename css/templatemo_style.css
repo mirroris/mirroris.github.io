@@ -12,7 +12,6 @@ body {
 	line-height: 1.5em; 
 	background-color: #363636;
 	background-repeat: repeat;
-	background: url(../images/templatemo_body.jpg)
 }
 
 a, a:link, a:visited { 
@@ -163,8 +162,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	text-align: center; 
 	letter-spacing: 2px; 
 	font-size: 11px; 
-	text-decoration: none; 
-	background: url(../images/templatemo_logo.png) no-repeat top center; 
+	text-decoration: none;  
 }
 
 #search_box { 
