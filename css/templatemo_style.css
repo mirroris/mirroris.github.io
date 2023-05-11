@@ -10,7 +10,7 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em; 
-	background-color: #61a8a4;
+	background-color: #363636;
 	background-repeat: repeat;
 	background: url(../images/templatemo_body.jpg)
 }
@@ -63,7 +63,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 
 .image_frame { 
 	margin-bottom: 10px; 
-	border: 5px solid #579c98; 
+	border: 5px solid #00554d; 
 }
 
 .image_fl { 
@@ -135,7 +135,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	margin: 30px 0 10px;
 	padding: 30px 10px 10px;
 	font-size: 11px;
-	background: #579c98 url(../images/templatemo_hr_divider.jpg) repeat-x bottom;
+	background: #00564d url(../images/templatemo_hr_divider.jpg) repeat-x bottom;
 }
 
 #templatemo_footer {
@@ -159,7 +159,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	display: block; 
 	width: 179px; 
 	padding-top: 37px; 
-	color: #0b2726; 
+	color: #282828; 
 	text-align: center; 
 	letter-spacing: 2px; 
 	font-size: 11px; 
@@ -232,7 +232,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	margin: 0 8px 8px 0; 
 	width: 220px; 
 	height: 150px; 
-	border: 5px solid #579c98;  
+	border: 5px solid #00897b;  
 }
 
 .gallery li a img { 
@@ -252,7 +252,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 .post .post_image { 
 	width: 600px; 
 	position: relative; 
-	border: 5px solid #579c98;  
+	border: 5px solid #00564d;  
 	margin-bottom: 20px; 
 }
 
