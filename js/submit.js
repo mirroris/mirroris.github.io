@@ -1,7 +1,9 @@
 function submitCode(){
+  var strid = "";
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://api.paiza.io/runners/create');
+  xhr.open('GET', 'https://api.paiza.io/runners/create', true);
   xhr.requestType = 'json';
+  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
   var params = {
     source_code:document.forms['code'],
     language:document.forms['language'],

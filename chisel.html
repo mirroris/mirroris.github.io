@@ -59,21 +59,6 @@ ddsmoothmenu.init({
 <script type="text/javascript" src="js/piroBox.1_2.js"></script>
 <script type="text/javascript" src="js/submit.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$().piroBox({
-			my_speed: 600, //animation speed
-			bg_alpha: 0.5, //background opacity
-			radius: 4, //caption rounded corner
-			scrollImage : false, // true == image follows the page, false == image remains in the same open position
-			pirobox_next : 'piro_next', // Nav buttons -> piro_next == inside piroBox , piro_next_out == outside piroBox
-			pirobox_prev : 'piro_prev',// Nav buttons -> piro_prev == inside piroBox , piro_prev_out == outside piroBox
-			close_all : '.piro_close',// add class .piro_overlay(with comma)if you want overlay click close piroBox
-			slideShow : 'slideshow', // just delete slideshow between '' if you don't want it.
-			slideSpeed : 4 //slideshow duration in seconds(3 to 6 Recommended)
-	});
-});
-</script>
 <!--////// END  \\\\\\\-->
 
 </head>
@@ -143,28 +128,7 @@ $(document).ready(function() {
                             <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.35.3/css/jquery.terminal.min.css" rel="stylesheet"/>
                             <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
                             <link href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
-                            jQuery(function($, undefined) {
-                                $('#term_demo').terminal({
-                                    add: function(a, b) {
-                                        this.echo(a + b);
-                                    },
-                                    re: function(re, str) {
-                                    if (re instanceof RegExp && re.test(str)) {
-                                        this.echo(str + ' [[;green;]match]');
-                                    }
-                                    },
-                                    foo: 'foo.php',
-                                    bar: {
-                                        sub: function(a, b) {
-                                            this.echo(a - b);
-                                        }
-                                    }
-                                }, {
-                                    height: 200,
-                                    width: 450,
-                                    prompt: 'demo> '
-                                });
-                            });
+                            
                         </form>
 
                     </div>
